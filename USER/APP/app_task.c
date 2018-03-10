@@ -11,10 +11,9 @@ void APP_MAIN_Task(void)
 {
 	if((g_u32Battery3VFlag == 0) && (g_u32Battery12VFlag == 0))
 	{
-		while(MID_ELECTRIC_SelfInspection())	//AD自检 判断外部是12V电池还是3.3电池
-		{
-			printf("\r\n......检测中......\r\n");
-		}
+		printf("\r\n......检测中......\r\n");
+		while(MID_ELECTRIC_SelfInspection()); //AD自检 判断外部是12V电池还是3.3电池
+		printf("\r\n！！检测完毕！！\r\n");
 	}
 	if(g_u8StartFlag == 1)
 	{
