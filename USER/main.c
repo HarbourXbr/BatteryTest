@@ -37,7 +37,7 @@ int main()
 	FLASH_Unlock();				//flash解锁
 	
 	MID_KEYBOARD_KeyPressInit();	//开始按键计数初始化
-//	g_u32Battery3VFlag = 1;
+
 	while(1)
 	{
 		MID_KEYBOARD_TASK();		//按键任务
