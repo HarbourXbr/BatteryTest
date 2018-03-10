@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "hal_electric.h": "c",
+        "global.h": "c",
+        "hal_timer.h": "c",
+        "mid_keyboard.h": "c",
+        "hal_nvmem.h": "c",
+        "mid_nvmem.h": "c",
+        "pub_lib.h": "c"
+    },
+    "C_Cpp.intelliSenseEngineFallback": "Disabled"
+}
