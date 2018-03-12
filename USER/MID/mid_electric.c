@@ -93,7 +93,14 @@ void MID_ELECTRIC_QuaryVolt2Mem(void)
 			u32VoltBuffer[i] = 0;
 		}
 		//		u32mAhBuffer[i] = u32VoltBuffer[i] * 3300 / 4095 * 4 /	RESISTANCE	/ 360;
-		fmahBuffer = ((float)u32VoltBuffer[i] / 4095 * 3300 + 120) * 3.45 / RESISTANCE / 360; //毫安时计算公式
+		if(g_u32Battery3VFlag == 1)
+		{
+			fmahBuffer = ((float)u32VoltBuffer[i] / 4095 * 3300 + 120) * 3.45 / RESISTANCE / 360; //毫安时计算公式
+		}
+		if(g_u32Battery12VFlag == 1)
+		{
+			fmahBuffer = ((float)u32VoltBuffer[i] / 4095 * 12000 + 120) * 3.45 / RESISTANCE / 360;
+		}
 		printf("\r\n  B%02d  %.3f  mah\r\n", i + 1, fmahBuffer);
 	}
 }
