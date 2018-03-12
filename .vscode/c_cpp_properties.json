@@ -47,7 +47,9 @@
             "includePath": [
                 "${workspaceRoot}",
                 "${workspaceRoot}/USER",
-                "${workspaceRoot}/CMSIS"
+                "${workspaceRoot}/CMSIS",
+                "${workspaceRoot}/USER/MID",
+                "${workspaceRoot}/USER/HAL"
             ],
             "defines": [
                 "_DEBUG",

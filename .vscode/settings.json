@@ -6,7 +6,8 @@
         "mid_keyboard.h": "c",
         "hal_nvmem.h": "c",
         "mid_nvmem.h": "c",
-        "pub_lib.h": "c"
+        "pub_lib.h": "c",
+        "mid_electric.h": "c"
     },
     "C_Cpp.intelliSenseEngineFallback": "Disabled"
 }
